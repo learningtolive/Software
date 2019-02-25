@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<link href="style-contry.css" rel="stylesheet">
+
+
+
+
+</head>
+
+
+<script>
+   // script to make the side pannel come out
+function openNav() {
+  document.getElementById("mySidenav").style.width = "200px";
+  document.getElementById("main").style.marginLeft = "0px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+
+var slideIndex = 0;
+showSlides();
+</script>
+
+
+</head>
+<body>
+<div class="login">
+	<a href="registration.php"> Register</a>
+ <a href="log.php" > LogIn</a>
+	<a href="test.php" >Table</a>
+	<select>
+  <option value="Chose Language" ><img src="img/iconfinder_uk.png">Volvo</option>
+  <option value="saab">language1</option>
+  <option value="opel">language 2</option>
+  <option value="audi">lanuage 3</option>
+</select>
+  
+	</div>
+
+	
+	
+
+
+
+<div id="mySidenav" class="sidenav">
+ <a  href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<a href="index.html " ><img src="logo/logo.png" width="200" > 
+ 
+  
+  <a href="story.html"> Stories </a>
+  <a href="contries.html">Partners	</a>
+  <a href="#">Link 3</a>
+  <a href="#">Link 4</a>
+
+</div>
+
+<div id="main">
+
+  <span style="cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>
+
+
+<!--  <div class="dropdown">
+  <button class="dropbtn">Select Your Language</button>
+  <div class="dropdown-content">
+  <a href="#">Link 1</a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+  </div>
+  </div>  -->
+  
+<div class="container2" >
+
+ <div class="fixed-size" > <img src="img/union-jack.jpg" width="200px" height="130px"> <a>UK</a> </div>
+  <div class="fixed-size" > <img src="img/ireland.jpg" width="200px" height="130px"> <a>IRELAND</a> </div>
+  <div class="fixed-size" > <img src="img/slovenia.jpg" width="200px" height="130px"> <a>SLOVENIA</a> </div>
+  <div class="fixed-size" > <img src="img/finland.jpg" width="200px" height="130px"> <a>FINLAND</a> </div>
+  <div class="fixed-size" > <img src="img/spain.jpg" width="200px" height="130px"> <a>SPAIN</a> </div>
+
+</div>
+
+
+
+<div class="bottomtext">
+<h1>
+__________________Learning To Live__________________
+</h1>
+</div>
+
+<div class="bottomtext2">
+<h1>
+Working Together
+</h1>
+</div>
+
+   <div class="image-scroll-homepage">
+   <h1>LEARNING to Live and Work Together</h1>
+ <h2> Improving the Quality of Life for Vulnerable Migrant Students through Integrated Digital Technology Enhanced Support and Transformative Action in Higher Education.</h2>
+
+</div>
+
+
+</html>
+
