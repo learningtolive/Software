@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<link href="style.css" rel="stylesheet">
+<script src="scroll.js"></script>
+<script>
+   // script to make the side pannel come out
+function openNav() {
+  document.getElementById("mySidenav").style.width = "200px";
+  document.getElementById("main").style.marginLeft = "0px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+
+var slideIndex = 0;
+showSlides();
+</script>
+
+
+</head>
+<body>
+<div class="login">
+	<a href="registration.php"> Register</a>
+ <a href="log.php" > LogIn</a>
+	<a href="test.php" >Table</a>
+	<select>
+  <option value="volvo" ><img src="img/iconfinder_uk.png">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="opel">Opel</option>
+  <option value="audi">Audi</option>
+</select>
+  
+	</div>
+
+	
+	
+
+
+
+<div id="mySidenav" class="sidenav">
+ <a  href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+ <a id="l" href="index.html " ><img src="logo/logo.png" width="200" > 
+ 
+  
+  <a href="story.php"> Stories </a>
+  <a href="partners.html">Partners	</a>
+  <a href="#">Resources</a>
+  <a href="#">Output</a>
+
+</div>
+
+<div id="main">
+
+  <span style="cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>
+
+
+   <div class="container3">
+	
+
+ <div class="fixed-size" > <a href ="#uk"><img src="img/union-jack.jpg" width="200px" height="130px" > UK</a> </div>
+  <div class="fixed-size" > <a href ="#ireland"><img src="img/ireland.jpg" width="200px" height="130px"> IRELAND</a> </div>
+  <div class="fixed-size" > <a href ="#slovenia"><img src="img/slovenia.jpg" width="200px" height="130px"> SLOVENIA</a> </div>
+  <div class="fixed-size" > <a href ="#finland"><img src="img/finland.jpg" width="200px" height="130px"> FINLAND</a> </div>
+  <div class="fixed-size" > <a href ="#spain"><img src="img/spain.jpg" width="200px" height="130px"> SPAIN</a> </div>
+
+ 
+ 
+ 
+</div>   
+
+<div class="card-container1">
+  <div class="cards1" id="uk">
+  <h1> Partners </h1>
+    <h2>UK</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, 
+	placeat numquam omnis sit consectetur nobis molestias! Explicabo deserunt. Consectetur 
+	adipisicing elit. Quibusdam obcaecati vel, placeat numquam placeat numquam omnis sit consectetur.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, 
+	placeat numquam omnis sit consectetur nobis molestias! Explicabo deserunt. Consectetur 
+	adipisicing elit. Quibusdam obcaecati vel, placeat numquam placeat numquam omnis sit consectetur.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, 
+	placeat numquam omnis sit consectetur nobis molestias! Explicabo deserunt. Consectetur 
+	adipisicing elit. Quibusdam obcaecati vel, placeat numquam placeat numquam omnis sit consectetur.</p>
+  </div>
+
+  <div class="cards1" id="ireland">
+    <h2>Ireland</h2>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, 
+	placeat numquam omnis sit consectetur nobis molestias! Explicabo deserunt. Consectetur 
+	adipisicing elit. Quibusdam obcaecati vel, placeat numquam placeat numquam omnis sit consectetur.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, 
+	placeat numquam omnis sit consectetur nobis molestias! Explicabo deserunt. Consectetur 
+	adipisicing elit. Quibusdam obcaecati vel, placeat numquam placeat numquam omnis sit consectetur.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, 
+	placeat numquam omnis sit consectetur nobis molestias! Explicabo deserunt. Consectetur 
+	adipisicing elit. Quibusdam obcaecati vel, placeat numquam placeat numquam omnis sit consectetur.</p>
+  </div>
+
+  <div class="cards1" id="slovenia">
+    <h2>SLOVENIA</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit 
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, 
+	placeat numquam omnis sit consectetur nobis molestias! Explicabo deserunt. Consectetur 
+	adipisicing elit. Quibusdam obcaecati vel, placeat numquam placeat numquam omnis sit consectetur.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, 
+	placeat numquam omnis sit consectetur nobis molestias! Explicabo deserunt. Consectetur 
+	adipisicing elit. Quibusdam obcaecati vel, placeat numquam placeat numquam omnis sit consectetur.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, 
+	placeat numquam omnis sit consectetur nobis molestias! Explicabo deserunt. Consectetur 
+	adipisicing elit. Quibusdam obcaecati vel, placeat numquam placeat numquam omnis sit consectetur.</p>
+  </div>
+   <div class="cards1" id="finland">
+    <h2>FINLAND</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, 
+	placeat numquam omnis sit consectetur nobis molestias! Explicabo deserunt. Consectetur 
+	adipisicing elit. Quibusdam obcaecati vel, placeat numquam placeat numquam omnis sit consectetur.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, 
+	placeat numquam omnis sit consectetur nobis molestias! Explicabo deserunt. Consectetur 
+	adipisicing elit. Quibusdam obcaecati vel, placeat numquam placeat numquam omnis sit consectetur.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, 
+	placeat numquam omnis sit consectetur nobis molestias! Explicabo deserunt. Consectetur 
+	adipisicing elit. Quibusdam obcaecati vel, placeat numquam placeat numquam omnis sit consectetur.</p>
+  </div>
+   <div class="cards1" id="spain">
+    <h2>SPAIN</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam 
+	omnis sit. orem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, 
+	placeat numquam omnis sit consectetur nobis molestias! Explicabo deserunt. Consectetur 
+	adipisicing elit. Quibusdam obcaecati vel, placeat numquam placeat numquam omnis sit consectetur.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, 
+	placeat numquam omnis sit consectetur nobis molestias! Explicabo deserunt. Consectetur 
+	adipisicing elit. Quibusdam obcaecati vel, placeat numquam placeat numquam omnis sit consectetur.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, 
+	placeat numquam omnis sit consectetur nobis molestias! Explicabo deserunt. Consectetur 
+	adipisicing elit. Quibusdam obcaecati vel, placeat numquam placeat numquam omnis sit consectetur.</p>
+  </div>
+</div>
+
+
+
+</body>
+		
+		<footer class="footermain">
+			<div class="footleft">
+		
+<h1 >Website Footer</h1>
+</div>
+				<div class="middleleft">
+					<a href="#">link</a>
+					<a href="#">MOT</a>
+					<a href="#">Tyres</a>
+					<a href="#">Contact Us</a>
+				
+			</div>
+			<div class="middleright">
+					<p>center of footer </p>	
+				
+					<p>huasjknfvsidjaf</p>
+				
+					<p>dhsajnm</p>
+				
+			</div>
+			<div class="footright">
+					<p> Heading</p>
+			
+			
+			
+						
+			</div>
+		</footer>
+</html>
