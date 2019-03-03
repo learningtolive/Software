@@ -3,7 +3,9 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 <link href="style.css" rel="stylesheet">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<body>
 <script>
    // script to make the side pannel come out
 function openNav() {
@@ -21,12 +23,12 @@ showSlides();
 </script>
 
 
-</head>
-<body>
+
+
 <div class="login">
-	<a href="registration.php"> Register</a>
- <a href="log.php" > LogIn</a>
-	<a href="test.php" >Table</a>
+	<a href="Registration/register.php"> Register</a>
+ <a href="Registration/login.php" > LogIn</a>
+	
 	<select>
   <option value="volvo" ><img src="img/iconfinder_uk.png">Volvo</option>
   <option value="saab">Saab</option>
@@ -43,13 +45,19 @@ showSlides();
 
 <div id="mySidenav" class="sidenav">
  <a  href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
- <a id="l" href="index.html " ><img src="logo/logo.png" width="200" > 
+ <a id="l" href="index.html " ><img src="logo/logo-white.png" width="200" > 
  
   
-  <a href="story.php"> Stories </a>
-  <a href="partners.html">Partners	</a>
-  <a href="#">Resources</a>
-  <a href="#">Output</a>
+ 
+	<a href="index.html">Home</a> 
+	<a href="#">Resources</a> 
+	<a href="#">Output</a> 
+	<!-- <a href="news/news.php">News</a> -->
+	<a href="about.html">About Us</a> 
+	<a href="story.php"> Stories </a> 
+	<a href="Newsletter/newsletter.php"> Newsletter </a>
+	<a href="partners.html">Partners </a> 
+
 
 </div>
 
@@ -70,32 +78,29 @@ showSlides();
 		
     </section>
 	
-
 	
-    <main>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec nibh molestie, efficitur leo sed, viverra nunc. Donec vehicula accumsan erat facilisis ullamcorper. Donec commodo quis dui nec placerat. Donec mi orci, scelerisque eget nisl ac, hendrerit condimentum odio. Nam dictum odio eget quam tempus, a mattis odio ornare. Nullam auctor libero ut libero suscipit, ut accumsan nunc condimentum. Donec ullamcorper maximus sapien quis egestas.</p>
-
-        <p>Mauris viverra scelerisque lobortis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce ultrices enim sit amet elit tincidunt maximus. Suspendisse vitae pellentesque lectus. Duis commodo leo suscipit augue mollis, non venenatis dolor ullamcorper. Duis tincidunt scelerisque lacus, vel vehicula leo consectetur vel. Duis posuere nisl non odio consequat ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        
-        <p>Etiam a leo nec mi blandit euismod. Etiam fringilla odio vitae risus ornare, id bibendum velit consequat. Fusce posuere risus sollicitudin condimentum ultrices. Fusce gravida, purus eget laoreet mattis, velit sapien ultrices diam, id dapibus erat leo id quam. Maecenas quis risus convallis, placerat elit non, iaculis tortor. Nullam porttitor magna risus, quis bibendum metus tincidunt in. Etiam vel ligula ac risus mattis tincidunt vel sit amet ante. Morbi et viverra ligula. Ut ac dignissim nisi, condimentum imperdiet mauris. Pellentesque ut ipsum vel diam tristique faucibus eu et lectus. Maecenas posuere neque non lacus bibendum, sit amet pharetra justo semper. Sed mi risus, tempor sit amet ligula eget, varius pretium est. Sed a odio in orci accumsan pretium suscipit ut quam.</p>
-    </main>
-
 
 <div class="card-container">
   <div class="cards">
     <h2>Feature 1</h2>
+	<img src="img/book.jpg" alt="book">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit consectetur nobis molestias! Explicabo deserunt. Consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam placeat numquam omnis sit consectetur.</p>
+ <!-- <button class="button button2"><a>Shadow on Hover</a></button> -->
+  <div class="button_cont" align="center"><a class="example_e" href="add-website-here" target="_blank" rel="nofollow noopener">More Information</a></div>
   </div>
 
   <div class="cards">
     <h2>Feature 2</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit consectetur nobis molestias! Explicabo deserunt placeat numquam omnis.</p>
-  </div>
+    <div class="button_cont" align="center"><a class="example_e" href="add-website-here" target="_blank" rel="nofollow noopener">More Information</a></div>
+ </div>
 
   <div class="cards">
     <h2>Feature 3</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit.</p>
+   <div class="button_cont" align="center"><a class="example_e" href="add-website-here" target="_blank" rel="nofollow noopener">More Information</a></div>
   </div>
+  
 </div>
 
 <div class="column-layout">
@@ -121,35 +126,56 @@ showSlides();
 
 </body>
 		
-		<footer class="footermain">
-			<div class="footleft">
+		<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3>Company<span>logo</span></h3>
+
 		
-<h1 >Website Footer</h1>
-</div>
-				<div class="middleleft">
-					<a href="#">link</a>
-					<a href="#">MOT</a>
-					<a href="#">Tyres</a>
-					<a href="#">Contact Us</a>
-				
+
+				<p class="footer-company-name">Company Name &copy; 2015</p>
 			</div>
-			<div class="middleright">
-					<p>center of footer </p>	
-				
-					<p>huasjknfvsidjaf</p>
-				
-					<p>dhsajnm</p>
-				
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>21 Revolution Street</span> Paris, France</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+1 555 123456</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@company.com">support@company.com</a></p>
+				</div>
+
 			</div>
-			<div class="footright">
-					<p> Heading</p>
-			
-			
-			
-						
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>About the company</span>
+					Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-github"></i></a>
+
+				</div>
+
 			</div>
+
 		</footer>
+
+	</body>
+
 </html>
-
-
-

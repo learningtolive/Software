@@ -3,7 +3,8 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 <link href="style.css" rel="stylesheet">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
 
 <script>
@@ -27,9 +28,11 @@ showSlides();
 
 </head>
 <body>
+
+
 <div class="login">
-	<a href="registration.php"> Register</a>
- <a href="log.php" > LogIn</a>
+	<a href="Registration/register.php"> Register</a>
+ <a href="Registration/login.php" > LogIn</a>
 	<a href="test.php" >Table</a>
 	<select>
   <option value="volvo" ><img src="img/iconfinder_uk.png">Volvo</option>
@@ -41,18 +44,22 @@ showSlides();
 	</div>
 
 	
-	
 
 
 <div id="mySidenav" class="sidenav">
  <a  href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
  <a href="index.html " ><img src="logo/logo.png" width="200" > 
+  <a id="l" href="index.html " ><img src="logo/logo-white.png" width="200" > 
  
-  
-  <a href="story.php"> Stories </a>
-  <a href="contries.html">Partners	</a>
-  <a href="#">Link 3</a>
-  <a href="#">Link 4</a>
+ 
+	<a href="index.html">Home</a> 
+	<a href="#">Resources</a> 
+	<a href="#">Output</a> 
+	<a href="Newsletter/newsletter.php">Newsletter</a> 
+	<a href="about.html">About Us</a> 
+	<a href="story.php"> Stories </a> 
+	<a href="partners.html">Partners </a> 
+
 
 </div>
 
@@ -184,33 +191,56 @@ $conn->close();
 
 
 </body>
-		
-		<footer class="footermain">
-			<div class="footleft">
-		
-<h1 >Website Footer</h1>
-</div>
-				<div class="middleleft">
-					<a href="#">link</a>
-					<a href="#">MOT</a>
-					<a href="#">Tyres</a>
-					<a href="#">Contact Us</a>
-				
-			</div>
-			<div class="middleright">
-					<p>center of footer </p>	
-				
-					<p>huasjknfvsidjaf</p>
-				
-					<p>dhsajnm</p>
-				
-			</div>
-			<div class="footright">
-					<p> Heading</p>
+	
+		<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3>Company<span>logo</span></h3>
+
 			
-			
-			
-						
+				<p class="footer-company-name">Company Name &copy; 2015</p>
 			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>21 Revolution Street</span> Paris, France</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+1 555 123456</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@company.com">support@company.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>About the company</span>
+					Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-github"></i></a>
+
+				</div>
+
+			</div>
+
 		</footer>
+
+	</body>
+
 </html>

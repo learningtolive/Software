@@ -1,0 +1,8 @@
+create table article (
+
+    a_id int(20) not null PRIMARY KEY AUTO_INCREMENT,
+    a_title varchar(300) not null,
+    a_text text not null,
+    a_aurthor varchar(300) not null,
+    a_date datetime not null
+);
