@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 <link href="style.css" rel="stylesheet">
@@ -9,7 +10,7 @@
    // script to make the side pannel come out
 function openNav() {
   document.getElementById("mySidenav").style.width = "200px";
-  document.getElementById("main").style.marginLeft = "100px";
+  document.getElementById("main").style.marginLeft = "0px";
 }
 
 function closeNav() {
@@ -17,36 +18,26 @@ function closeNav() {
   document.getElementById("main").style.marginLeft= "0";
 }
 
+</script>
 
 
- </script>
+
 
 <div class="login">
-	<a href="../../Registration/register.php"> Register</a>
- <a href="../../Registration/login.php" > LogIn</a>
+	<a href="Registration/register.php"> Register</a>
+ <a href="Registration/login.php" > LogIn</a>
 	
-	<div class="lang">
-  <button class="dropbtn">Dropdown</button>
-  <div class="lang-content">
-  <a href="#"><img src="../../img/union-jack.jpg"></a>
-  <a href="#"><img src="../../img/finland.jpg"></a>
-  <a href="#"><img src="../../img/ireland.jpg"></a>
-  <a href="#"><img src="../../img/spain.jpg"></a>
-  <a href="#"><img src="../../img/slovenia.jpg"></a>
-  </div>
-</div>
+	<select>
+  <option value="volvo" ><img src="img/iconfinder_uk.png">Language</option>
+  <option value="saab"><i class="fas fa-globe-africa"></i></option><style>"color:black"</style>
+  <option value="opel">Language</option>
+  <option value="audi">Language</option>
+</select>
   
-     
-   <div class="search">
-  <form class="searchbar" action="#">
-  <input type="text" placeholder="search" name="search">
-     <button type="submitsearch" class="searchButton"> <i class="fa fa-search"></i> </button>
- </form>
-   </div>
-  </div>
-  
+	</div>
 
-
+	
+	
 
 <div id="mySidenav" class="sidenav">
  <a  href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -55,8 +46,8 @@ function closeNav() {
   
  
 	<a href="index.html">Home</a> 
-	<a href="pdf/files.html">Resources</a> 
-	<a href="temp.html">Output</a>
+		<a href="pdf/pdf.html">Resources</a> 
+	<a href="temp.html">Output</a> 
 	<!-- <a href="news/news.php">News</a> -->
 	<a href="About/about.html">About Us</a> 
 	<a href="story.php"> Stories </a> 
@@ -70,14 +61,13 @@ function closeNav() {
 <div id="main">
 
   <span style="cursor:pointer" onclick="openNav()">&#9776;</span>
-  
 </div>
 
 
 
 <section class="hero">
         <div class="hero-inner">
-            <h1></h1>
+            <h1>Template</h1>
             <h2>Improving the Quality of Life for Vulnerable Migrant Students through Integrated Digital Technology Enhanced Support and Transformative Action in Higher Education.</h2>
            
         </div>
@@ -88,25 +78,23 @@ function closeNav() {
 	
 
 <div class="card-container">
-
-
   <div class="cards">
-    <h2>Feature 1</h2>
-	<img src="img/people.jpg" alt="book">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit consectetur nobis molestias! Explicabo deserunt. Consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam placeat numquam omnis sit consectetur.</p>
+    <h2>Template</h2>
+	<img src="img/book.jpg" alt="book">
+    <p>.                                                                                                                                                                                                    .</p>
  <!-- <button class="button button2"><a>Shadow on Hover</a></button> -->
   <div class="button_cont" align="center"><a class="example_e" href="add-website-here" target="_blank" rel="nofollow noopener">More Information</a></div>
   </div>
 
   <div class="cards">
-    <h2>Feature 2</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit consectetur nobis molestias! Explicabo deserunt placeat numquam omnis.</p>
+    <h2>Template</h2>
+    <p>.                                                                                                                                                                                                    .</p>
     <div class="button_cont" align="center"><a class="example_e" href="add-website-here" target="_blank" rel="nofollow noopener">More Information</a></div>
  </div>
 
   <div class="cards">
-    <h2>Feature 3</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam obcaecati vel, placeat numquam omnis sit.</p>
+    <h2>Template</h2>
+    <p>.                                                                                                                                                                                                    .</p>
    <div class="button_cont" align="center"><a class="example_e" href="add-website-here" target="_blank" rel="nofollow noopener">More Information</a></div>
   </div>
   
@@ -114,21 +102,21 @@ function closeNav() {
 
 <div class="column-layout">
   <div class="middle">
-    <h2>Main Column</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam voluptatibus soluta, consequuntur, reiciendis debitis omnis fugiat libero pariatur amet laudantium minima consectetur tenetur. Repudiandae, autem, voluptate modi deleniti sequi voluptatum!</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi earum fugit veniam amet quae sint vitae numquam dolore sunt quod a odio officia voluptate doloribus, at. Cum quasi mollitia eaque. Voluptatibus soluta, consequuntur, reiciendis debitis omnis fugiat libero pariatur amet laudantium.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam voluptatibus soluta, consequuntur, reiciendis debitis omnis fugiat libero pariatur amet laudantium minima consectetur tenetur. Repudiandae, autem, voluptate modi deleniti sequi voluptatum!</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi earum fugit veniam amet quae sint vitae numquam dolore sunt quod a odio officia voluptate doloribus, at. Cum quasi mollitia eaque.</p>
+    <h2>Template</h2>
+    <p>.                                                                                                                                                                                                    .</p>
+    <p>.                                                                                                                                                                                                    .</p>
+    <p>.                                                                                                                                                                                                    .</p>
+    <p>.                                                                                                                                                                                                    .</p>
   </div>
 
   <div class="left">
-    <h3>Sidebar One</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum modi nisi tenetur sint dignissimos nulla, blanditiis nesciunt.</p>
+    <h3>Template</h3>
+    <p>.                                                                                                                                                                                                    .</p>
   </div>
 
   <div class="right">
-    <h3>Sidebar Two</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum modi nisi tenetur sint dignissimos nulla, blanditiis nesciunt.</p>
+    <h3>Template</h3>
+    <p>.                                                                                                                                                                                                    .</p>
   </div>
 </div>
 
@@ -185,5 +173,6 @@ function closeNav() {
 
 		</footer>
 
+	</body>
 
 </html>

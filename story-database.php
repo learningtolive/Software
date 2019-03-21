@@ -23,14 +23,13 @@ $sql = "INSERT INTO story (Name,Email,Message)
 VALUES ('$Name','$Email','$Message')";
 
 if ($conn->query($sql) === TRUE) {
-	header("refresh:2;url=story.php");
-    echo "Thank You";
+	header("refresh:1;url=story.php");
 }
 
 	
 }else {
 	echo"please fill all";
-	 header("refresh:2;url=story.php"); 
+	 header("refresh:1;url=story.php"); 
 }
 	
 $conn->close();

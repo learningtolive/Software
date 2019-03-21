@@ -1,0 +1,663 @@
+/*font and min bckground white */
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color:	white;
+
+	background-color:	#eaeff7;
+
+}
+
+
+
+input{
+	padding: 0px 20px;
+	width: 300px;
+	height: 40px;
+font-size:22px;
+}
+button{
+		
+	width: 100px;
+	height: 44px;
+font-size:22px;
+}
+.hero {
+    /* Sizing */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white; 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.5)), url('img/book.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.hero h1 {
+    /* Text styles */
+    font-size: 120px;
+margin-top: 0;
+    margin-bottom: 20px;
+}
+
+
+#main {
+	font-size:30px;
+	padding:10px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+    background-color: rgba(41, 44, 47);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+
+  }
+  #l img{
+	  width:200px;
+  }
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.4s;
+}
+
+.sidenav #l{
+padding:0px;
+}
+
+
+.sidenav a:hover {
+  color: grey;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    padding-left: 8px;
+    cursor: pointer;
+    font-size: 50px;
+    padding-top: 3px;
+
+}
+
+
+.login a:hover {
+  color: grey;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+	  padding-top: 15px;
+	  padding-bottom:15px;
+	  }
+  .sidenav a {
+	  font-size: 12px;
+	  }
+	  
+}
+
+.login{
+	float:right;
+transition: margin-left .5s;
+	
+}
+
+.login a{
+	float:right;
+padding:10px;
+text-decoration:none;
+color:black;
+}
+
+
+.login  select{
+	margin-right:50px;
+	margin-top:10px;
+}
+
+.dropbtn {
+  background-color: black;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+	border-radius: 5px;
+}
+
+.lang {
+  position: relative;
+  display: inline-block;
+}
+
+.lang-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 110px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+	border-radius: 5px;
+	text-align: left;
+}
+
+.lang-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+	width: 81%;
+}
+.lang-content img {
+	width: 50px;
+}
+
+.lang-content a:hover {background-color: #f1f1f1}
+
+.lang:hover .lang-content {
+  display: block;
+}
+
+.lang:hover .dropbtn {
+  background-color: grey;
+}
+/** header */
+
+
+.banner-newsletter {
+    /* Sizing */
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white; 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.5)), url('../img/newsletter.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	margin-bottom:40px;
+}
+
+.banner-newsletter h1 {
+    /* Text styles */
+    font-size: 60px;
+margin-top: 0;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 800px) {
+.banner-newsletter h1{
+	font-size:30px;
+	transition: 0.5s;
+}
+
+}
+
+
+/** conatienr starts here */
+
+
+
+.butn {
+color: #fff !important;
+text-transform: uppercase;
+background: #60a3bc;
+padding: 20px;
+border-radius: 50px;
+display: inline-block;
+border: none;
+text-decoration:none;
+}
+
+
+.butn:hover {
+text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
+}
+
+
+
+/* grid starts here */
+.item2 { 
+
+padding: 20px;
+grid-area: text; 
+
+}
+.item3{ 
+
+grid-area: image;
+ 
+ }
+ 
+.item5 { 
+
+padding: 20px;
+grid-area: more-text;
+}
+
+.grid-container {
+  display: grid;
+  grid-template:
+    'text text text text image image'
+	                                            /** this is how the grid will look*/
+    'text text text text more-text more-text';
+	
+  grid-gap: 10px;
+  
+
+}
+
+.grid-container > div {
+  text-align: center;
+  font-size: 25px;
+  
+}
+.item3 img{
+	width: 100%;
+	
+}
+
+
+
+
+
+@media screen and (max-width: 650px){
+	
+
+
+
+.grid-container {
+  display: grid;
+  grid-template:
+    'text text text text '
+	                                            /** this is how the grid will look*/
+    'text text text text '
+	'image image image image'
+	'more-text more-text more-text more-text';
+	
+  grid-gap: 10px;
+transition: 0.5s;
+
+}
+
+ 
+
+}
+
+ @media screen and (max-width: 800px) {
+
+
+.grid-container > div {
+ transition: 0.5s;
+  font-size: 12px;
+  
+}
+}
+/* grid fisnishes here */
+
+html {
+  scroll-behavior: smooth;
+}
+
+#signup {
+	padding-top:300px;
+
+	}	
+	
+
+/**    FOOTER STARTS HERE   */
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+
+	padding: 55px 50px;
+	margin-top: 80px;
+}
+
+
+
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+/** footer ends */
+
+
+
+
+  table {
+      margin-left: 60px;
+    margin-right: 60px;
+    width: 90%;
+    margin-top: 20px;
+	
+   
+   
+     } 
+	   th {            /** this is the title **/
+   background-color: #eaeff7;
+   color: black;
+  margin:20px;
+     border-bottom: 1px solid black;
+	 font-size:20px;
+	 padding-bottom:20px;
+	 
+	}
+	
+td{    /** these are the rows **/
+padding-right:20px;
+ border-bottom: 1px solid black;
+ padding-bottom:40px;
+	}
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+.list img{
+width:20px;
+height:20px;
+}
+
+
+/* form page*/
+
+
+#forms{
+	/**background-image: url('Images/car4.jpg');
+	/**repeat: no-repeat;*/
+
+	padding: 55px 55px 55px 55px;
+	border-radius:10px;
+	    background-size: cover;
+   
+	width:40%;
+	text-align: center;
+		margin:auto;
+	color:black;
+}
+.my-form h1{
+	color:white;
+}
+.my-form label{
+	display:block;
+	  font-size:20px;
+	   color:white;
+  font-weight:bold;
+ 
+}
+
+#signup img{
+width:300px;
+height:200px;
+
+}
+
+
+
+
+.my-form #email{
+width:320px;
+height:30px;
+border-radius:5px;
+font-size:20px;
+padding-left:5px;
+padding-top:5px;
+padding-bottom:5px;
+text-align:center;
+
+
+}
+.my-form #fname{
+width:300px;
+height:30px;
+border-radius:5px;
+font-size:20px;
+padding-left:5px;
+padding-top:5px;
+padding-bottom:5px;
+text-align:center;
+
+}
+.my-form #sname{
+width:300px;
+height:30px;
+border-radius:5px;
+font-size:20px;
+padding-left:5px;
+padding-top:5px;
+padding-bottom:5px;
+text-align:center;
+}
+
+#signupbg{
+ background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.5)), url('../img/bgsignup.jpg');
+	padding-top:60px;
+	padding-bottom:60px;
+	margin-bottom:30px;
+	width:100%;
+	 background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	
+
+}
+
+
+.button_submit{
+
+  background-color: #ffffff00;
+  color: white;
+  border: 2px solid white;
+  border-radius:5px;
+  cursor: pointer;
+	
+}
+@media screen and (max-width: 800px) {
+	#forms{
+		width:60%;
+	}
+.my-form #email{
+	
+width:150px;
+
+}
+.my-form #fname{
+width:150px;
+
+}
+.my-form #sname{
+width:150px;
+}
+
+}
+
+
+ 

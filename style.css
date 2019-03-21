@@ -23,18 +23,8 @@ font-size:12px;
 	width:100%;
 }
 
-input{
-	padding: 0px 20px;
-	width: 300px;
-	height: 40px;
-font-size:22px;
-}
-button{
-		
-	width: 100px;
-	height: 44px;
-font-size:22px;
-}
+
+
 .hero {
     /* Sizing */
     height: 100vh;
@@ -55,6 +45,21 @@ font-size:22px;
     font-size: 120px;
 margin-top: 0;
     margin-bottom: 20px;
+}
+.hero-inner h1:before {
+	content: 'Learning To Live';
+	animation: animate infinite 12s;
+	transition: 0.8;
+	
+}
+
+@keyframes animate {
+	
+	20% {content: 'Learning To Live'}
+	40% {content: 'OPPIMINEN Elää'}
+	60% {content: 'UĆENJE Življenja'}
+	80% {content: 'FOGHLAIM Le Maireachtáil'}
+	100% {content: 'APRENDIENDO A Vivir'}
 }
 
 @media screen and (max-width: 800px) {
@@ -152,6 +157,117 @@ color:black;
 	margin-right:50px;
 	margin-top:10px;
 }
+ /* drop down starts here */
+.dropbtn {
+  background-color: black;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+	border-radius: 5px;
+}
+
+.lang {
+  position: relative;
+  display: inline-block;
+}
+
+.lang-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 110px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+	border-radius: 5px;
+	text-align: left;
+}
+
+.lang-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+	width: 81%;
+}
+.lang-content img {
+	width: 50px;
+}
+
+.lang-content a:hover {background-color: #f1f1f1}
+
+.lang:hover .lang-content {
+  display: block;
+}
+
+.lang:hover .dropbtn {
+  background-color: grey;
+}
+
+.input-group {
+  margin: 10px 0px 10px 0px;
+}
+.input-group label {
+  display: block;
+  text-align: left;
+  margin: 3px;
+}
+.input-group input {
+  height: 30px;
+  width: 93%;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.btn {
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  background: #5F9EA0;
+  border: none;
+  border-radius: 5px;
+}
+.error {
+  width: 92%; 
+  margin: 0px auto; 
+  padding: 10px; 
+  border: 1px solid #a94442; 
+  color: #a94442; 
+  background: #f2dede; 
+  border-radius: 5px; 
+  text-align: left;
+}
+.success {
+  color: #3c763d; 
+  background: #dff0d8; 
+  border: 1px solid #3c763d;
+  margin-bottom: 20px;
+}
+
+.search{
+	float: left;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+	height:25px;
+	}
+
+	.searchButton{
+		 padding: 6px; 
+		width:30px;
+		height:30px;
+		cursor: pointer;
+	}
+	
+	.searchbar input[type=text] {
+  padding: 6px;
+  font-size: 17px;
+  border: none;
+  border-radius:5px;
+}
+ /* drop down finsishes here */
 
 .container{
 	padding-top:10px;
@@ -269,6 +385,8 @@ width:100%;
 	margin-top:20px;
 	
 }
+
+
 
 
 .image-scroll2 {
@@ -408,25 +526,79 @@ background-image: linear-gradient(#ffffff, #eaeff7);
 width:100%;
 	
 }
-/**
-.button2:hover {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-}
-*/
-/*
-.button {
-  background-color: #4CAF50;  G
-  border: none;
-  color: white;
-  border-radius:10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 10px;
 
-  cursor: pointer;
-  transition-duration: 0.2s;
-} */
+
+/* banner for suport page */
+
+.hero_sup {
+    /* Sizing */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.5)), url('img/question-m.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.hero_sup h1 {
+    /* Text styles */
+    font-size: 120px;
+margin-top: 0;
+    margin-bottom: 20px;
+	color: white; 
+}
+
+@media screen and (max-width: 800px) {
+	
+	.hero_sup{
+		    width:100%;
+	}
+.hero_sup h1{
+	font-size:50px;
+	transition: 0.5s;
+	
+}
+}
+
+/** cards for support page */
+
+.container_sup {
+  margin: 40px auto 0 auto;
+}
+
+.cards_sup {
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 10px;
+  flex-basis: 80%;
+
+ position: relative;
+background-color:white;
+
+}
+
+
+.cards_sup img{
+width:100%;
+	
+}
+
+
+@media (min-width: 1200px) {
+.container_sup {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+}
+
+
 .example_e {
    border:1px solid;
     color: black;
@@ -498,7 +670,11 @@ border-top: 1px solid black;
 
 }
 
-
+@media screen and (max-width: 800px) {
+	.column-layout {
+		display: inline-grid;
+	}
+}
 
  
 #nav ul li {
@@ -761,9 +937,6 @@ html {
 
 @media (max-width: 880px) {
 
-	.footer-distributed{
-		font: bold 14px sans-serif;
-	}
 
 	.footer-distributed .footer-left,
 	.footer-distributed .footer-center,
@@ -772,6 +945,7 @@ html {
 		width: 100%;
 		margin-bottom: 40px;
 		text-align: center;
+		font: 14px;
 	}
 
 	.footer-distributed .footer-center i{
@@ -880,6 +1054,11 @@ padding-right:20px;
  padding-bottom:40px;
 	}
 	
+@media screen and (max-width: 800px) {
+	table {
+		display: inline-grid;
+	}
+}
 
 	
 
