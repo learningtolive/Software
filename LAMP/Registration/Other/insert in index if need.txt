@@ -1,0 +1,70 @@
+<script>
+		
+		$('#like$id').click(function()
+    {
+    $.ajax({
+    url: 'inc/scripts/liker_ajax.php?like=$id',
+    type: 'GET',  
+    success:function(result){   
+       $('#like$id').addClass('green');  
+       $('#dislike$id').removeClass('red');    
+       $('#myDiv').html(result); 
+    } 
+    });
+    }); 
+</script>
+<div id="myDiv">
+	<form class="my-form" action="chat-database.php" method="post">
+
+<br/>
+
+
+<div class="story">
+<h3> gfrshfnrdmkl </h3>
+<input placeholder= "INPUT 1"  type="text" name="Name"  id="name"/>
+<input placeholder= " INPUT 2"  type="text" name="Email"  id="name"/>
+<textarea maxlength="1000"  placeholder="Type Here"  name="Message"></textarea>
+
+
+
+<!--      <input placeholder= "Type Your Story Here "  type="text" name="Story"  id="story"/> -->
+ 
+	<br/>
+
+<input class="subbutton" type="submit" >
+
+
+</div>
+
+</form>
+
+
+<table class="story-table">
+ <tr>
+  <th>Name</th> 
+  <th>Email	</th> 
+  <th>Messages</th>
+ </tr>
+
+<?php
+$conn = mysqli_connect("localhost", "srehma28", "Mangla786", "srehma28");
+  // Check connection
+  if ($conn->connect_error) {
+   die("Connection failed: " . $conn->connect_error);
+  } 
+  $sql = "SELECT * FROM chat";
+  $result = $conn->query($sql);
+  if ($result->num_rows > 0) {
+   // output data of each row
+   while($row = $result->fetch_assoc()) {
+	   
+    echo "<tr><td><br>". $row["Name"]. "<td> <br>" . $row["Email"] . "<td><br>" . $row["Message"] . " <tr> <br>  ";
+}
+echo "";
+} else { echo "0 results"; }
+$conn->close();
+?>
+</div>
+</table>
+
+</div>	
